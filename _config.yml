@@ -2,7 +2,7 @@ title:              Naochan’s Blog
 description:        Naochan Official Blog
 author:             naochan83275
 url:                "https://naochan83275.github.io"
-baseurl:            "/blog"
+baseurl:            "/blogtest"
 copyright:          "&copy; 2024 Naochan83275"
 
 markdown:           kramdown
