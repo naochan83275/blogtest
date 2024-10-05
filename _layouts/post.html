@@ -22,7 +22,7 @@ layout: default
   {{ content }}
   <hr>
   <div>
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="{{ site.url }}{{ site.baseurl }}{{ page.path }}" data-lang="ja" data-show-count="false"> </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="{{ site.url }}{{ site.baseurl }}/{{ page.path | replace: '_', '' | replace: '.md', '.html' }}" data-lang="ja" data-show-count="false"> </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
   </div>
   {% if page.authors %}
@@ -41,13 +41,13 @@ layout: default
   {% if page.previous.url %}
   <a class="button is-info" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
     &larr; 前の投稿<br>
-    {{ page.previous.title | truncate: 8 }}
+    {{ page.previous.title | truncate: 15 }}
   </a>
   {% endif %}
   {% if page.next.url %}
   <a class="button is-info is-right" style="text-align: right;" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
     次の投稿 &rarr;<br>
-    {{ page.next.title | truncate: 8 }}
+    {{ page.next.title | truncate: 15 }}
   </a>
   {% endif %}
 </div>
