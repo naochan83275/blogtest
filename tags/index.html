@@ -2,10 +2,10 @@
 layout: page
 title: タグ別に見る
 ---
-<div class=“box”>
+<div class="box">
   <p class="title 4">タグ一覧</p>
   {% for tag in site.tags %}
-    <a class=“button is-info” href="#{{ tag[0] }}">{{ tag[0] }}</a><br>
+    <a class="button is-info" href="#{{ tag[0] }}">{{ tag[0] }}</a><br>
   {% endfor %}
 </div>
 
